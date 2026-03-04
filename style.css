@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    border-bottom: 1px solid #333;
+}
+
+h1 {
+    margin: 5px;
+    font-size: 28px;
+}
+
+/* Manga Reader */
+.manga-reader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Panels */
+.panel {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Fade In Effect */
+.panel.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    border-top: 1px solid #333;
+}
